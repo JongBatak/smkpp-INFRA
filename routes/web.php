@@ -53,4 +53,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// =========================
+// 🔹 Halaman dengan Layout Baru
+// =========================
+Route::get('/newpage', function () {
+    return view('pages.newpage');
+});
+
+Route::get('/tentang/profil-guru', function () {
+    return view('tentang.profil-guru'); // ini menunjuk ke resources/views/tentang/profil-guru.blade.php
+})->name('profil.guru');
+
+
+
 require __DIR__ . '/auth.php';
