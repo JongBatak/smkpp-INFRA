@@ -21,4 +21,10 @@
 /vendor
 Homestead.json
 Homestead.yaml
+<<<<<<< HEAD
 Thumbs.db
+=======
+npm-debug.log
+Thumbs.db
+yarn-error.log
+>>>>>>> master
